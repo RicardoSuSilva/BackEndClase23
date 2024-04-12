@@ -1,6 +1,6 @@
 import productModel from "../models/product.js";
 
-export const gerProduct = async (query, limit, page, ordQuery) => {
+export const getProducts = async (limit, page, filter, ord) => {
     
         let metfilter;
         const pag = page !== undefined ? page : 1;
